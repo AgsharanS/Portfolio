@@ -1,0 +1,391 @@
+[
+  {
+    "id": "shems",
+    "status": "Featured",
+    "category": "IoT / Backend",
+    "title": "Smart Home Energy Management System",
+    "short": "A locally hosted energy monitoring and appliance-control platform built around a Raspberry Pi backend.",
+    "period": "Oct 2025 - Jun 2026",
+    "cover": "assets/img/projects/shems/cover.webp",
+    "tags": [
+      "Raspberry Pi 5",
+      "FastAPI",
+      "SQLite",
+      "MQTT",
+      "Docker",
+      "Cloudflare Tunnel",
+      "PWA"
+    ],
+    "links": [],
+    "scope": "A smart home prototype that collects appliance and main-supply data, stores usage records locally, exposes API services, and provides a dashboard for monitoring, billing insight, and appliance control.",
+    "role": "Focused on the backend/local-server layer: Raspberry Pi deployment, Mosquitto MQTT integration, FastAPI endpoints, SQLite storage, command routing, acknowledgement handling, analytics, dashboard support, and remote access through Cloudflare Tunnel.",
+    "implementation": [
+      "Docker Compose deployment on Raspberry Pi 5 with Mosquitto, FastAPI, SQLite and supporting Python services.",
+      "MQTT telemetry pipeline for receiving ESP32 node data and routing appliance control commands.",
+      "Web/PWA dashboard views for billing, appliance status, graphs, automation, abnormal usage, system health and settings.",
+      "Remote access validation through a Cloudflare Tunnel endpoint while keeping the core system locally hosted."
+    ],
+    "results": [
+      "Operational local backend that could receive telemetry, store data, return API responses and route control commands.",
+      "Dashboard and mobile access were validated with real system screens and remote endpoint tests.",
+      "Built as a practical, low-cost alternative to cloud-dependent home energy platforms."
+    ],
+    "gallery": [
+      [
+        "assets/img/projects/shems/flow.svg",
+        "Recreated public architecture flow"
+      ],
+      [
+        "assets/img/projects/shems/dashboard-overview.webp",
+        "Dashboard overview"
+      ],
+      [
+        "assets/img/projects/shems/hardware-prototype.webp",
+        "Developed prototype hardware"
+      ],
+      [
+        "assets/img/projects/shems/appliance-dashboard.webp",
+        "Appliance dashboard"
+      ],
+      [
+        "assets/img/projects/shems/automation-dashboard.webp",
+        "Automation control view"
+      ],
+      [
+        "assets/img/projects/shems/usage-graphs.webp",
+        "Energy graphs"
+      ],
+      [
+        "assets/img/projects/shems/mobile-overview.webp",
+        "Mobile dashboard view"
+      ]
+    ]
+  },
+  {
+    "id": "smart-ac",
+    "status": "Featured",
+    "category": "Embedded IoT",
+    "title": "Smart AC Monitoring and Control System",
+    "short": "ESP32-based AC controller with IR learning, local web configuration and MQTT-based remote control support.",
+    "period": "Jul 2025",
+    "cover": "assets/img/projects/smart-ac/cover.webp",
+    "tags": [
+      "ESP32",
+      "IRremoteESP8266",
+      "EEPROM",
+      "AsyncWebServer",
+      "MQTT/MQTTS",
+      "WebSocket"
+    ],
+    "links": [],
+    "scope": "A facility automation prototype for monitoring AC-related conditions and controlling air conditioners through learned IR remote commands.",
+    "role": "Worked on ESP32 firmware, IR command capture/transmission, EEPROM-based command storage, AP/STA Wi-Fi configuration, embedded web pages, MQTT communication and testing workflows.",
+    "implementation": [
+      "Browser-accessible setup interface for Wi-Fi configuration, status monitoring, diagnostics and IR command testing.",
+      "IR receiver/transmitter logic for capturing remote-control codes and replaying selected AC functions.",
+      "MQTT/MQTTS communication path for external control and integration with higher-level automation systems."
+    ],
+    "results": [
+      "Functional smart AC controller with local configuration and remote-control capability.",
+      "Improved usability by moving setup and diagnostics into an embedded web interface.",
+      "Developed practical experience in production-oriented ESP32 IoT firmware."
+    ],
+    "gallery": [
+      [
+        "assets/img/projects/smart-ac/flow.svg",
+        "Recreated AC control flow"
+      ],
+      [
+        "assets/img/projects/smart-ac/configuration-dashboard.webp",
+        "Embedded configuration dashboard"
+      ],
+      [
+        "assets/img/projects/smart-ac/controller-enclosure.webp",
+        "Controller enclosure reference"
+      ],
+      [
+        "assets/img/projects/smart-ac/hardware-interface.webp",
+        "Hardware interface diagram"
+      ]
+    ]
+  },
+  {
+    "id": "industrial-machine-monitoring",
+    "status": "Featured",
+    "category": "Industrial IoT",
+    "title": "Industrial Machine Monitoring System",
+    "short": "Factory-oriented condition monitoring devices for machine temperature and current observation using ESP32 and MQTT.",
+    "period": "Jul 2025 - Aug 2025",
+    "cover": "assets/img/projects/industrial-machine-monitoring/cover.webp",
+    "tags": [
+      "ESP32",
+      "MAX6675",
+      "K-Type Thermocouple",
+      "IR Temperature",
+      "Current Transformer",
+      "MQTT",
+      "PCB",
+      "AutoCAD"
+    ],
+    "links": [],
+    "scope": "An industrial IoT monitoring device set developed during an R&D internship to observe machine condition data such as temperature and current-related behaviour.",
+    "role": "Supported requirement analysis, BOM preparation, component selection, PCB review, enclosure planning, soldering, wiring, drilling-layout preparation, sensor calibration, continuity testing and system-level validation.",
+    "implementation": [
+      "Integrated K-type thermocouples with MAX6675 modules, IR temperature sensing and current-transformer based measurement support.",
+      "Prepared enclosure drilling layouts and assembled field-ready monitoring devices.",
+      "Performed MQTT publish/receive checks and practical calibration using measurement tools."
+    ],
+    "results": [
+      "Four independent monitoring devices were assembled and validated.",
+      "Testing covered sensor readings, continuity, enclosure fit, calibration and MQTT telemetry.",
+      "The project gave strong hands-on exposure to reliability-focused industrial prototyping."
+    ],
+    "gallery": [
+      [
+        "assets/img/projects/industrial-machine-monitoring/flow.svg",
+        "Recreated industrial monitoring flow"
+      ],
+      [
+        "assets/img/projects/industrial-machine-monitoring/final-monitoring-devices.webp",
+        "Completed monitoring devices"
+      ],
+      [
+        "assets/img/projects/industrial-machine-monitoring/enclosure-drilling-layout.webp",
+        "Enclosure drilling layout"
+      ],
+      [
+        "assets/img/projects/industrial-machine-monitoring/mqtt-test.webp",
+        "MQTT test evidence"
+      ],
+      [
+        "assets/img/projects/industrial-machine-monitoring/soldering-assembly.webp",
+        "PCB assembly work"
+      ],
+      [
+        "assets/img/projects/industrial-machine-monitoring/sensor-calibration.webp",
+        "Sensor calibration"
+      ],
+      [
+        "assets/img/projects/industrial-machine-monitoring/electrical-testing.webp",
+        "Electrical testing"
+      ]
+    ]
+  },
+  {
+    "id": "egg-crack-detection",
+    "status": "Featured",
+    "category": "Computer Vision / Edge AI",
+    "title": "Egg Crack Detection System",
+    "short": "Raspberry Pi 5 conveyor prototype using camera capture and CNN inference to classify cracked and intact eggs.",
+    "period": "Feb 2025 - Sep 2025",
+    "cover": "assets/img/projects/egg-crack-detection/cover.webp",
+    "tags": [
+      "Raspberry Pi 5",
+      "IMX219 Camera",
+      "OpenCV",
+      "TensorFlow/Keras",
+      "VGG16",
+      "GPIO",
+      "Conveyor Control"
+    ],
+    "links": [],
+    "scope": "A low-cost automated quality inspection prototype intended for small and medium-scale egg handling environments where manual inspection is slow and inconsistent.",
+    "role": "Worked on the integrated system flow combining IR triggering, conveyor stopping, image capture, model inference and LED indication. The model was trained using transfer learning and deployed locally on the Raspberry Pi.",
+    "implementation": [
+      "IR sensor detects an egg at the inspection point and triggers the timed capture sequence.",
+      "Conveyor pauses briefly to stabilize the egg before image capture through an IMX219 camera.",
+      "A VGG16-based CNN classifies the captured image as cracked or intact; GPIO-controlled LEDs show the output."
+    ],
+    "results": [
+      "Model assessment reported 72.3% accuracy, 76.2% precision and 66.7% recall on the validation set.",
+      "Prototype testing across 124 captured images reached 78.2% overall classification accuracy.",
+      "The system achieved roughly 0.8 s inference time per image in the prototype workflow."
+    ],
+    "gallery": [
+      [
+        "assets/img/projects/egg-crack-detection/flow.svg",
+        "Recreated detection workflow"
+      ],
+      [
+        "assets/img/projects/egg-crack-detection/prototype-conveyor.webp",
+        "Conveyor prototype"
+      ],
+      [
+        "assets/img/projects/egg-crack-detection/camera-inspection-zone.webp",
+        "Camera inspection zone"
+      ],
+      [
+        "assets/img/projects/egg-crack-detection/model-accuracy.webp",
+        "Training accuracy curve"
+      ],
+      [
+        "assets/img/projects/egg-crack-detection/model-loss.webp",
+        "Training loss curve"
+      ],
+      [
+        "assets/img/projects/egg-crack-detection/confusion-matrix.webp",
+        "Confusion matrix"
+      ]
+    ]
+  },
+  {
+    "id": "semantic-compression",
+    "status": "Academic",
+    "category": "Signal Processing",
+    "title": "Semantic-Aware Image Compression",
+    "short": "OCR-guided DCT compression that preserves text readability while compressing background regions more aggressively.",
+    "period": "Jan 2026 - Feb 2026",
+    "cover": "assets/img/projects/semantic-compression/cover.webp",
+    "tags": [
+      "MATLAB",
+      "OCR",
+      "DCT",
+      "Vector Quantization",
+      "LBG Algorithm",
+      "PSNR"
+    ],
+    "links": [],
+    "scope": "A DSP project exploring region-aware compression for images that contain text, where readability matters more than uniform visual quality.",
+    "role": "Implemented the semantic pipeline: OCR-based text localization, block-level classification, 8x8 DCT processing, text-preserving coefficient handling and background vector quantization.",
+    "implementation": [
+      "OCR output was converted into a text mask and aligned with 8x8 DCT blocks.",
+      "Text blocks were preserved with higher fidelity while background blocks were compressed using LBG-trained vector quantization.",
+      "Results were compared against uniform compression behaviour using visual and numerical quality observations."
+    ],
+    "results": [
+      "Improved text readability compared with uniform compression at similar compression intent.",
+      "Text-region quality was prioritized while retaining useful background compression.",
+      "The project demonstrated semantic bit allocation using classical DSP tools rather than a black-box codec."
+    ],
+    "gallery": [
+      [
+        "assets/img/projects/semantic-compression/flow.svg",
+        "Recreated compression flow"
+      ],
+      [
+        "assets/img/projects/semantic-compression/compression-pipeline.webp",
+        "Original pipeline figure"
+      ],
+      [
+        "assets/img/projects/semantic-compression/original-image.webp",
+        "Original test image"
+      ],
+      [
+        "assets/img/projects/semantic-compression/semantic-mask-output.webp",
+        "Semantic processing output"
+      ],
+      [
+        "assets/img/projects/semantic-compression/text-preserving-output.webp",
+        "Text-preserving reconstruction"
+      ]
+    ]
+  },
+  {
+    "id": "line-follower",
+    "status": "Academic",
+    "category": "Robotics / Control",
+    "title": "Line Follower Robot with Fuzzy Logic Control",
+    "short": "ESP32 differential-drive robot using a five-sensor IR array and Sugeno-style fuzzy rule mapping for line tracking.",
+    "period": "Jan 2026 - Feb 2026",
+    "cover": "assets/img/projects/line-follower/cover.webp",
+    "tags": [
+      "ESP32",
+      "TB6612FNG",
+      "IR Sensor Array",
+      "Fuzzy Logic",
+      "Differential Drive",
+      "Embedded C/C++"
+    ],
+    "links": [],
+    "scope": "A mobile robotics and controls project focused on replacing simple threshold-based steering with fuzzy rule-based motor control.",
+    "role": "Worked on robot layout, sensor integration, rule mapping, motor-driver integration and practical tuning on curved track sections.",
+    "implementation": [
+      "Five IR sensor states were mapped into steering behaviour using a zero-order Sugeno-style fuzzy rule base.",
+      "The ESP32 generated left/right motor commands through a TB6612FNG dual motor driver.",
+      "Track tests were used to tune behaviour around curves and junctions."
+    ],
+    "results": [
+      "Reduced abrupt steering compared with basic on/off line-following logic.",
+      "Demonstrated robust tracking on a lab-built path with turns and transitions.",
+      "Produced a compact embedded robotics prototype from circuit to motion testing."
+    ],
+    "gallery": [
+      [
+        "assets/img/projects/line-follower/flow.svg",
+        "Recreated fuzzy-control flow"
+      ],
+      [
+        "assets/img/projects/line-follower/robot-side-view.webp",
+        "Robot side view"
+      ],
+      [
+        "assets/img/projects/line-follower/robot-top-view.webp",
+        "Robot top view"
+      ],
+      [
+        "assets/img/projects/line-follower/track-test-curve.webp",
+        "Curve tracking test"
+      ],
+      [
+        "assets/img/projects/line-follower/track-test-junction.webp",
+        "Track test view"
+      ]
+    ]
+  },
+  {
+    "id": "server-rack-monitoring",
+    "status": "Academic",
+    "category": "Embedded Monitoring",
+    "title": "Smart Server Rack Monitoring System",
+    "short": "ESP32 and LabVIEW based local monitoring system for rack temperature, humidity and threshold-based health indication.",
+    "period": "Jan 2026 - Feb 2026",
+    "cover": "assets/img/projects/server-rack-monitoring/cover.webp",
+    "tags": [
+      "ESP32",
+      "LabVIEW",
+      "Serial Data",
+      "Temperature",
+      "Humidity",
+      "Threshold Logic"
+    ],
+    "links": [],
+    "scope": "A compact rack-level environmental monitoring project aimed at detecting thermal stratification and abnormal local conditions.",
+    "role": "Developed the local sensing and visualization workflow, including ESP32 packet generation, LabVIEW parsing/display, threshold checks and health-indicator logic.",
+    "implementation": [
+      "Multiple temperature and humidity readings were collected from different rack positions.",
+      "Structured serial packets were sent to LabVIEW for real-time parsing and visualization.",
+      "Threshold logic and rack-health indicators were used to flag abnormal conditions."
+    ],
+    "results": [
+      "Functional hardware enclosure and local dashboard were built for lab demonstration.",
+      "Thermal/humidity status and derived indicators were visualized clearly in LabVIEW.",
+      "The project focused on environmental monitoring, not full industrial power analytics."
+    ],
+    "gallery": [
+      [
+        "assets/img/projects/server-rack-monitoring/flow.svg",
+        "Recreated rack-monitoring flow"
+      ],
+      [
+        "assets/img/projects/server-rack-monitoring/hardware-enclosure.webp",
+        "Hardware enclosure"
+      ],
+      [
+        "assets/img/projects/server-rack-monitoring/internal-hardware.webp",
+        "Internal hardware"
+      ],
+      [
+        "assets/img/projects/server-rack-monitoring/web-dashboard.webp",
+        "Web dashboard"
+      ],
+      [
+        "assets/img/projects/server-rack-monitoring/labview-dashboard.webp",
+        "LabVIEW dashboard"
+      ],
+      [
+        "assets/img/projects/server-rack-monitoring/labview-thresholds.webp",
+        "LabVIEW threshold view"
+      ]
+    ]
+  }
+]
